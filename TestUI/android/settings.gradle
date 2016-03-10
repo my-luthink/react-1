@@ -1,0 +1,7 @@
+rootProject.name = 'TestUI'
+
+include ':app'
+include ':react-native-barcodescanner'
+include ':react-native-image-chooser'
+project(':react-native-barcodescanner').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-barcodescanner/android')
+project(':react-native-image-chooser').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-image-chooser/android')
